@@ -1,0 +1,9 @@
+.buttonBg {
+		background-image: url("../../assets/other/pattern.png");
+		background-repeat: no-repeat;
+}
+
+.buttonBg2 {
+	background-image: url("../../assets/other/pattern2.png");
+	background-repeat: no-repeat;
+}

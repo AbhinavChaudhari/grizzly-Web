@@ -1,24 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/466bde28f618f6ea76902f48da3d4c7a?family=Neue+Haas+Unica+Pro);
-/* @font-face {
-    font-family: 'Neue Haas Unica';
-    src: url('NeueHaasUnica-Regular.eot');
-    src: local('Neue Haas Unica Regular'), local('NeueHaasUnica-Regular'),
-        url('NeueHaasUnica-Regular.eot?#iefix') format('embedded-opentype'),
-        url('NeueHaasUnica-Regular.woff2') format('woff2'),
-        url('NeueHaasUnica-Regular.woff') format('woff'),
-        url('NeueHaasUnica-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-#bgImageMountan {
-    background-image: url("./assets/Desktop/Mountain_1_.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-}

@@ -6,6 +6,27 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'normal': "2.5rem",
+        'large': "2.75rem",
+        'xlarge': "3.75rem"
+      },
+      
+      lineHeight : {
+        large: "3.25rem",
+        xlarge: "3.75rem"
+      },
+
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },      
+
       colors:{
         primary: "#212A34",
         secondary: "#11B2A8",
@@ -19,6 +40,7 @@ export default {
         neue: 500,
         bold: 950
       },
+      
     },
 
    
@@ -38,5 +60,7 @@ export default {
 
 
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

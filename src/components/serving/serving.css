@@ -1,0 +1,19 @@
+img {
+	width: auto;
+	height: 160px;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#backgroundImage {
+	background-image: url('../../assets/Desktop/bg.png');
+}
+

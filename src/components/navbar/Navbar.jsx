@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { logo, burger } from '../../assets'
+import MobileNav from './mobileNav/mobileNav'
 
 const Navbar = () => {
+	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+
     return (
 
         <nav className='w-full lg:border lg:border-b-2 lg:border-borderColor'>
-            <div className='h-[100px] flex items-center container mx-auto'>
+            <div className='h-[6.25rem] flex items-center container mx-auto'>
                 {/* left side  */}
                 <div>
                     <img src={logo} alt="logo" className='mr-8 ml-4 h-[2.25rem] lg:h-[3rem] lg:ml-0'/>
@@ -25,10 +28,10 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex ml-auto lg:hidden mr-4'>
-                    <img src={burger} alt="" srcset="" />
-
+                    <img src={burger} alt="" srcset="" onClick={() => {setMobileMenuOpen(!isMobileMenuOpen)}} />
                 </div>
             </div>
+            <MobileNav isMobileMenuOpen={isMobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
 
         </nav>
 
